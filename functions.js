@@ -105,16 +105,17 @@ console.log(answer);*/
 
 const leagueFinish = prompt("Where did Leeds finish the season ?");
 
-function leagueFinishCheck(f) {
-    if (leagueFinish <= 24 && leagueFinish > 22) {
+function leagueFinishCheck(postion) {
+    if (postion > 21) {
         return "Leeds were relegated";
-    } else if (leagueFinish <= 21 && leagueFinish >= 7) {
+    } else if (postion <= 21 && postion >= 7) {
         return "Leeds stayed in the championship";
-    } else if (leagueFinish <= 6 && leagueFinish >= 3) {
+    } else if (postion <= 6 && postion >= 3) {
         return "Leeds lost in the playoffs";
     } else {
+        return "Leeds were promoted";
     }
-    return "Leeds were promoted";
+
 
 
 
